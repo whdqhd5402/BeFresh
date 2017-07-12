@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+
+        <RelativeLayout
+            android:id="@+id/rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/comment_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="30032dongsu@gmail.com" />
+
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/comment_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:text="존맛탱" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:layout_below="@+id/comment_content"
+            android:background="#cccccc" />
+
+    </RelativeLayout>
+</LinearLayout>

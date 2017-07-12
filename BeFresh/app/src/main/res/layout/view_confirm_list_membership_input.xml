@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:paddingBottom="48.3dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="26.3dp"
+        android:layout_marginBottom="32.3dp"
+        android:layout_marginLeft="12.3dp"
+        android:layout_marginRight="12.3dp"
+        android:layout_marginTop="24.8dp"
+        android:src="@drawable/freshpeople_checkboxtitle" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25.5dp"
+        android:layout_marginRight="28.3dp"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/first_check_membership_input"
+            android:layout_width="18.3dp"
+            android:layout_height="18.3dp"
+            android:layout_marginRight="17.3dp"
+            android:button="@drawable/membership_input_check" />
+
+        <TextView
+            android:id="@+id/first_content_membership_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="3dp"
+            android:letterSpacing="0.05"
+            android:text="비프레시 쿠킹박스 도착일은 토요일입니다. 고객님들의
+편의를 위해 배송 도착일을 늘릴 수 있도록 노력하겠습니
+다."
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25.5dp"
+        android:layout_marginRight="28.3dp"
+        android:layout_marginTop="30.5dp"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/second_check_membership_input"
+            android:layout_width="18.3dp"
+            android:layout_height="18.3dp"
+            android:layout_marginRight="17.3dp"
+            android:button="@drawable/membership_input_check" />
+
+        <TextView
+            android:id="@+id/second_content_membership_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="3dp"
+            android:letterSpacing="0.05"
+            android:text="결제는 도착일 이틀 전인 목요일 오후 2시에 완료 됩니다.
+프레시피플 맴버십을 구독하면 등록된 카드에서 자동으로
+결제가 완료됩니다."
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25.5dp"
+        android:layout_marginRight="28.3dp"
+        android:layout_marginTop="33.5dp"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/third_check_membership_input"
+            android:layout_width="18.3dp"
+            android:layout_height="18.3dp"
+            android:layout_marginRight="17.3dp"
+            android:button="@drawable/membership_input_check" />
+
+        <TextView
+            android:id="@+id/third_content_membership_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="3dp"
+            android:letterSpacing="0.05"
+            android:text="원하지 않는 요리는 ‘마이페이지&gt;스케줄 관리’창에서 건
+너 뛸 수 있습니다. 취소하실 경우 그 주에는 배송이 가지
+않습니다. 다만 쿠킹 박스 수령 여부는 결제 예정일(목요
+일 오후2시) 이전까지 선택해주셔야 합니다."
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25.5dp"
+        android:layout_marginRight="28.3dp"
+        android:layout_marginTop="33dp"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/fourth_check_membership_input"
+            android:layout_width="18.3dp"
+            android:layout_height="18.3dp"
+            android:layout_marginRight="17.3dp"
+            android:button="@drawable/membership_input_check" />
+
+        <TextView
+            android:id="@+id/fourth_content_membership_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:lineSpacingExtra="3dp"
+            android:letterSpacing="0.05"
+            android:text="결제가 이루어진 후에는 주문 취소가 불가능합니다. 또한
+신선한 재료를 제공하는 서비스 특성상 재료에 문제가 있
+는 것이 아니면 단순 변심으로 인한 환불은 어렵습니다."
+            android:textSize="12sp" />
+    </LinearLayout>
+
+
+</LinearLayout>
