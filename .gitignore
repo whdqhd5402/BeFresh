@@ -9,4 +9,4 @@
 .externalNativeBuild
 *.zip
 /document
-/BeFresh
+/BeFresh/*
