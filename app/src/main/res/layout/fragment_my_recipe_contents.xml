@@ -1,0 +1,139 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.befresh.befreshapp.Community.MyRecipe.MyRecipeContentsFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/content_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp"
+                    android:scaleType="fitXY" />
+
+                <LinearLayout
+                    android:id="@+id/ll2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/content_image"
+                    android:background="@drawable/border"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/email"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="6.8dp"
+                            android:layout_marginLeft="21.3dp"
+                            android:layout_marginTop="13.8dp"
+                            android:text="email" />
+
+                        <TextView
+                            android:id="@+id/like_count_my_recipe_contents"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginEnd="28dp"
+                            android:layout_marginTop="13.8dp"
+                            android:text="0"
+                            android:textSize="8dp" />
+
+                        <TextView
+                            android:id="@+id/title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignStart="@+id/email"
+                            android:layout_below="@+id/email"
+                            android:layout_marginTop="6.8dp"
+                            android:text="두유 버섯 파스타"
+                            android:textColor="@color/colormain"
+                            android:textSize="17dp" />
+
+                        <CheckBox
+                            android:id="@+id/like_my_recipe_contents"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_below="@+id/like_count_my_recipe_contents"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginTop="1.8dp"
+                            android:button="@drawable/heart_check_myrecipe" />
+
+
+                        <TextView
+                            android:id="@+id/content"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignStart="@+id/title"
+                            android:layout_below="@+id/title"
+                            android:layout_marginBottom="21.8dp"
+                            android:layout_marginRight="26.3dp"
+                            android:layout_marginTop="12.5dp"
+                            android:text="처음 먹어보는 두유버섯파스타는 너무나도 맛나고 쿠킹박스도
+깔끔하게 잘 배송이 온 것 같아서 너무 좋았어요ㅎㅎ" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/content_rcv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll2"
+                android:layout_marginTop="3dp">
+            </android.support.v7.widget.RecyclerView>
+            </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout1"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="5dp">
+
+        <EditText
+            android:id="@+id/comment_myrecipe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="9dp"
+            android:layout_weight="8"
+            android:background="@drawable/myrecipe_commentbox"
+            android:hint="내용을 입력해 주세요"
+            android:paddingLeft="15dp" />
+
+        <ImageButton
+            android:id="@+id/complete_comment_myrecipe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="7dp"
+            android:background="@drawable/myrecipe_commentbutton" />
+
+    </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

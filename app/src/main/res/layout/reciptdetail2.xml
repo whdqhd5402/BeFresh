@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/titlebar_layout2"
+        android:layout_width="match_parent"
+        android:layout_height="56.2dp"
+        android:background="#ffffff">
+
+        <!--android:contentDescription="@string/img_content_description"-->
+        <!--android:src="@drawable/back" />-->
+        />
+
+
+
+        <TextView
+            android:id="@+id/center_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:paddingTop="3dp"
+            android:clickable="true"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="20dp"
+            android:background="#ffffff"
+            android:textSize="17sp"
+            android:textColor="@color/colormain"
+            android:textAppearance="?android:attr/textAppearanceMediumInverse"
+            android:text="1/10"
+            />
+
+
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/undo_icon"
+            android:layout_marginStart="20dp"
+            android:background="#ffffff"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+
+
+
+        <!--android:contentDescription="@string/img_content_description" />-->
+
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@drawable/bottom_shadow"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recipe_detail_rcv">
+
+
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>

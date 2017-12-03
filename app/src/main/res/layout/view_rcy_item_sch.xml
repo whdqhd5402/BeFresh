@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="224dp"
+            android:id="@+id/menu_image"
+            android:layout_below="@+id/week_title"
+            android:layout_alignParentStart="true" />
+
+        <CheckBox
+            android:id="@+id/like_main"
+            android:layout_width="41dp"
+            android:layout_height="38.5dp"
+            android:layout_alignBottom="@+id/menu_image"
+            android:layout_alignEnd="@+id/menu_image"
+            android:layout_marginBottom="5.8dp"
+            android:layout_marginRight="13dp"
+            android:layout_marginTop="10dp"
+            android:button="@drawable/heart_check_recipe" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/menu_image"
+            android:orientation="vertical"
+            android:id="@+id/ll1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/main_relative1"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="피클 어니언 샐러드"
+                    android:textSize="15dp"
+                    android:textColor="@color/colormain"
+                    android:id="@+id/menu_name"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="피클과 양파의 신선하고 새로운 만남"
+                    android:layout_below="@+id/menu_name"
+                    android:textSize="14dp"
+                    android:id="@+id/menu_info"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/main_relative1"
+                android:layout_marginBottom="16dp"
+                android:layout_weight="2">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="조리시간"
+                    android:layout_marginLeft="16dp"
+                    android:textColor="#dddddd"
+                    android:textSize="9dp"
+                    android:id="@+id/level"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/level"
+                    android:layout_marginLeft="8dp"
+                    android:textColor="#dddddd"
+                    android:id="@+id/cooktime"
+                    android:textSize="9dp"
+                    android:text="20 ~ 30분"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:paddingTop="3dp"
+                    android:textColor="#dddddd"
+                    android:id="@+id/tag"
+                    android:src="@drawable/tag"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/level"
+                    android:layout_marginLeft="8dp"
+                    android:textColor="#dddddd"
+                    android:id="@+id/material"
+                    android:textSize="10dp"
+                    android:text="달걀 프리, 견과류 프리"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="7dp"
+            android:layout_below="@+id/ll1"
+            android:background="#cccccc"/>
+        <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@drawable/search"-->
+            <!--android:layout_marginTop="15dp"-->
+            <!--android:id="@+id/search_icon"/>-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/text_recycler_search"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:paddingLeft="@dimen/searched_text_left_padding"-->
+            <!--android:paddingTop="10dp"-->
+            <!--android:paddingBottom="10dp"-->
+            <!--android:layout_toRightOf="@+id/search_icon"-->
+            <!--android:textSize="11dp"-->
+            <!--android:textColor="#cccccc"-->
+            <!--tools:hint="search" />-->
+
+    </RelativeLayout>
+
+</RelativeLayout>

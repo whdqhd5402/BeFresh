@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textColor="#676666"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:paddingTop="5dp"
+        android:id="@+id/week_title" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="224dp"
+        android:id="@+id/menu_image"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/week_title"
+        android:layout_alignParentStart="true" />
+
+    <CheckBox
+        android:id="@+id/like_main"
+        android:layout_width="41dp"
+        android:layout_height="38.5dp"
+        android:layout_alignBottom="@+id/menu_image"
+        android:layout_alignEnd="@+id/menu_image"
+        android:layout_marginBottom="5.8dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginTop="10dp"
+        android:button="@drawable/heart_check_recipe" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="7dp"
+        android:layout_below="@+id/ll1"
+        android:background="@drawable/bottom_shadow"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/ll1"
+        android:layout_below="@+id/menu_image"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/main_relative1"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="피클 어니언 샐러드"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="@color/colormain"
+                android:id="@+id/menu_name"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="피클과 양파의 신선하고 새로운 만남"
+                android:layout_below="@+id/menu_name"
+                android:textSize="14dp"
+                android:id="@+id/menu_info"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/main_relative1"
+            android:layout_marginBottom="16dp"
+            android:layout_weight="2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="조리시간"
+                android:layout_marginLeft="16dp"
+                android:textColor="#aaaaaa"
+                android:textSize="9dp"
+                android:id="@+id/level"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/level"
+                android:layout_marginLeft="8dp"
+                android:textColor="#aaaaaa"
+                android:id="@+id/cooktime"
+                android:textSize="9dp"
+                android:text="20 ~ 30분"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="조리시간"
+                android:layout_marginLeft="16dp"
+                android:paddingTop="1dp"
+                android:textColor="#aaaaaa"
+                android:src="@drawable/tag"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/level"
+                android:layout_marginLeft="8dp"
+                android:textColor="#aaaaaa"
+                android:id="@+id/material"
+                android:textSize="9dp"
+                android:text="달걀 프리, 견과류 프리"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

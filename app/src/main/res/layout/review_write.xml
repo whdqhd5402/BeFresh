@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:id="@+id/titlebar_layout2"
+        android:layout_width="match_parent"
+        android:layout_height="56.2dp"
+        android:background="@drawable/toolbarborder">
+
+        <TextView
+            android:id="@+id/center_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:clickable="true"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="20dp"
+            android:background="#ffffff"
+            android:textSize="20sp"
+            android:textColor="@color/colormain"
+            android:visibility="visible"
+            android:textAppearance="?android:attr/textAppearanceMediumInverse"
+            android:text="후기작성"
+            />
+        <TextView
+            android:id="@+id/toolbar_complete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:clickable="true"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:background="#ffffff"
+            android:text="확인"
+            />
+
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/undo_icon"
+            android:layout_marginStart="20dp"
+            android:background="#ffffff"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            android:id="@+id/count_ll">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:id="@+id/fronttxt"
+                android:textSize="15dp"
+                android:textColor="@color/colormain"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:id="@+id/backtxt"
+                android:text="/10"/>
+        </LinearLayout>
+
+
+        <!--android:contentDescription="@string/img_content_description" />-->
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#ffffff">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/border"
+            android:paddingBottom="10dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/image"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:text="피클 어니언 샐러드"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:textColor="@color/colormain"
+            android:id="@+id/title"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:layout_marginTop="20dp"
+                android:textColor="#cccccc"
+                android:gravity="center_horizontal"
+                android:text="평가하시려면 별표를 탭하세요."
+                android:textAlignment="center"/>
+            <RatingBar
+                android:id="@+id/write_recipe_ratingbar"
+                style="@style/customRatingBar1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:numStars="5"
+                android:rating="3"
+                android:stepSize="1"
+                />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="16dp"
+            android:textColor="#666666"
+            android:text="레시피의 후기를 작성해 주세요(140자)"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="13sp"
+            android:hint="타인의 저작권을 침해하거나 악성 비방글, 게시판의 성격에 맞지\n않는 글은 관리자에 의해 삭제될 수 있습니다."
+            android:id="@+id/write_recipe_content"
+            android:background="#ffffff"
+            android:textColor="#cccccc"/>
+
+
+    </LinearLayout>
+</LinearLayout>

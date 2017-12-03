@@ -1,0 +1,36 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dddddd"
+    tools:context="com.befresh.befreshapp.Membership.MembershipInputFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#eeeeee">
+
+            <include layout="@layout/member_info_membership_input" />
+
+            <include layout="@layout/view_delivery_info_membership_input" />
+
+            <include layout="@layout/view_payment_membership_input" />
+
+            <include layout="@layout/view_confirm_list_membership_input" />
+
+            <Button
+                android:id="@+id/btn_payment_membership_input"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:background="@color/colormain"
+                android:textSize="15dp"
+                android:text="결제하기"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

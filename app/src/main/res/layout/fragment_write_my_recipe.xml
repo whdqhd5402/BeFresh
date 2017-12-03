@@ -1,0 +1,145 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.befresh.befreshapp.Community.MyRecipe.WriteMyRecipeFragment">
+
+    <RelativeLayout
+        android:id="@+id/titlebar_layout2"
+        android:layout_width="match_parent"
+        android:layout_height="56.2dp"
+        android:background="@drawable/toolbarborder">
+
+        <TextView
+            android:id="@+id/center_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:clickable="true"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="20dp"
+            android:background="#ffffff"
+            android:textSize="20sp"
+            android:textColor="@color/colormain"
+            android:visibility="visible"
+            android:textAppearance="?android:attr/textAppearanceMediumInverse"
+            android:text="후기작성"
+            />
+        <TextView
+            android:id="@+id/toolbar_complete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:clickable="true"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:background="#ffffff"
+            android:text="확인"
+            />
+
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/undo_icon"
+            android:layout_marginStart="20dp"
+            android:background="#ffffff"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            android:id="@+id/count_ll">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:id="@+id/fronttxt"
+                android:textSize="15dp"
+                android:textColor="@color/colormain"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:id="@+id/backtxt"
+                android:text="/10"/>
+        </LinearLayout>
+
+
+        <!--android:contentDescription="@string/img_content_description" />-->
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/img_write_my_recipe"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_weight="2"
+            android:scaleType="center"
+            android:src="@drawable/myrecipe_addpic" />
+
+        <ImageView
+            android:id="@+id/imageview"
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:layout_below="@id/img_write_my_recipe"
+            android:background="#cccccc" />
+
+        <EditText
+            android:id="@+id/title_write_my_recipe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageview"
+            android:background="@null"
+            android:hint="제목을 작성해 주세요."
+            android:paddingBottom="17dp"
+            android:paddingLeft="26.5dp"
+            android:paddingTop="17dp"
+            android:textSize="13dp" />
+
+        <ImageView
+            android:id="@+id/imageview2"
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:layout_below="@id/title_write_my_recipe"
+            android:background="#cccccc" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageview2">
+
+            <EditText
+                android:id="@+id/content_write_my_recipe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="@null"
+                android:hint="후기를 작성해 주세요(140자)"
+                android:paddingBottom="15dp"
+                android:paddingLeft="26.5dp"
+                android:paddingTop="15dp"
+                android:textSize="13dp" />
+        </ScrollView>
+
+
+    </RelativeLayout>
+    </ScrollView>
+</LinearLayout>
